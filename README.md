@@ -3,7 +3,7 @@
 
 This script was created because we were unable to import MRI files
 
-# TITLE
+# MRI_Tag_Fix
 
 converts spaces to backslash in MRI ImageType DICOM tag
 
