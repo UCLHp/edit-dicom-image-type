@@ -33,8 +33,10 @@ for filename in dicom_file_list:
     if filename.startswith('MR'):
         counter += 1
         dicom = pydicom.read_file(os.path.join(dir + '\\', filename))
-        dicom.ImageType = dicom.ImageType.replace(' ', '\\')
-        dicom.save_as(os.path.join(dir + '\\', filename))
+        if isinstance(dicom.ImageType, str):
+            dicom.ImageType = dicom.ImageType.replace(' ', '\\')
+            dicom.save_as(os.path.join(dir + '\\', filename))
 
 print(f'{counter} of {len(dicom_file_list)} files identified as MRI images')
 print('\nCode Finished')
+input('Press enter to close window')
