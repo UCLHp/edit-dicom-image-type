@@ -31,7 +31,7 @@ if easygui.ynbox("Do you accept the disclaimer and wish to continue?:"):
 else:
     print('Code will not run if disclaimer is not accepted')
     input('Press enter to close window')
-    exit()  # exit the program
+    raise SystemExit  # exit the program
 
 # User selects the directory then exited if directory selection is cancelled
 dir = easygui.diropenbox("Please select the DICOM directory")
@@ -40,7 +40,7 @@ if not dir:
     print('No directory selected:')
     print('Code terminated')
     input('Press enter to close window')
-    exit()
+    raise SystemExit
 
 print(f'Selected directory is: {dir}\n')
 print('Please wait, checking tags...\n')
@@ -55,7 +55,7 @@ if len(dicom_file_list) == 0:
     print('Selected directory is empty')
     print('Code Terminated')
     input('Press enter to close window')
-    exit()
+    raise SystemExit
 
 # Loops through each file in the directory,
 # if the file contains the ImageType Tag, it is opened, checked for spaces and
