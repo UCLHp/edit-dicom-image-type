@@ -1,7 +1,7 @@
 # edit-dicom-image-type
 
 
-This script was created because we were unable to import MRI files
+This script was created because we were unable to import various files from other centres
 
 Created by Callum Gillies 06/05/2020,
 This code intends to edit the tag only and leave the image intact
@@ -27,7 +27,7 @@ f formed of multiple parts, outline file structure
 
 ## Installation
 
-Unsure how to install - maybe provide executable here
+Do not install, please use latest version of the executable
 
 ### Requirements
 
@@ -48,7 +48,6 @@ Perform QA checks against PACS once imported into eclipse
 
 ## Limitations / Known Bugs
 
-DICOM files must begin with MR
 only the image type tag is edited, this will not solve other issues
 
 ## Contribute
