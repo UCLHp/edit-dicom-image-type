@@ -3,7 +3,17 @@
 
 This script was created because we were unable to import MRI files
 
-# MRI_Tag_Fix
+Created by Callum Gillies 06/05/2020,
+This code intends to edit the tag only and leave the image intact
+
+This code was not intended to be a completely automated procedure.
+Appropriate QA checks should be performed after the code is run
+to ensure the imagess are unchanged
+
+I take no responsibility if this code is used in any way other than
+intended or without checks that may result in errors.
+
+# ImageType_Tag_Fix
 
 converts spaces to backslash in MRI ImageType DICOM tag
 
