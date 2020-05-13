@@ -1,13 +1,13 @@
 # edit-dicom-image-type
-Created by Callum Gillies 06/05/2020
+Created by Callum Gillies 06/05/2020.
 
-Convert spaces to backslashes in ImageType DICOM tag. 
+Script to convert spaces to backslashes in ImageType DICOM tag. 
 
 This script was created because we were unable to import various files from other centres.
 This code intends to edit the tag only and leave the image intact. 
 
 This code was not intended to be a completely automated procedure. Appropriate QA checks
-should be performed after the code is run to ensure the imagess are unchanged
+should be performed after the code is run to ensure the images are unchanged.
 
 I take no responsibility if this code is used in any way other than
 intended or without checks that may result in errors.
@@ -19,23 +19,21 @@ Do not install, please use the latest version of the executable.
 
 ### Requirements
 
-pydicom 
-os 
-easygui 
+pydicom  
+easygui   
 
 
 ## Usage
 
-* Copy MRI DICOM files into temporary directory, run the executable and
+1. Copy MRI DICOM files into temporary directory, run the executable and
 follow the command prompt instructions. 
-* Import the edited files into eclipse. 
-* Perform QA checks against PACS once imported into eclipse. 
+2. Import the edited files into eclipse. 
+3. Perform QA checks against PACS once imported into eclipse. 
 
 
 ## Contribute
 
-Pull requests are welcome.  
-For major changes, please open a ticket first to discuss desired changes: [edit-dicom-image-type/issues](http://github.com/UCLHp/edit-dicom-image-type/issues)
+Pull requests are welcome. For major changes, please open a ticket first to discuss desired changes: [edit-dicom-image-type/issues](http://github.com/UCLHp/edit-dicom-image-type/issues)
 
 
 ## Licence

@@ -61,12 +61,12 @@ if len(dicom_file_list) == 0:
 # if the file contains the ImageType Tag, it is opened, checked for spaces and
 # edited to replace spaces with backslashes if present
 for filename in dicom_file_list:
-    dicom = pydicom.read_file(os.path.join(dir + '\\', filename))
+    dicom = pydicom.read_file(os.path.join(dir, filename))
     if (0x0008, 0x0008) in dicom:
         if isinstance(dicom.ImageType, str):
             counter += 1
             dicom.ImageType = dicom.ImageType.replace(' ', '\\')
-            dicom.save_as(os.path.join(dir + '\\', filename))
+            dicom.save_as(os.path.join(dir, filename))
 
 print(f'{counter} of {len(dicom_file_list)} files corrected for spaces')
 print('\nCode Finished')
