@@ -1,59 +1,44 @@
 # edit-dicom-image-type
+Created by Callum Gillies 06/05/2020.
 
+Script to convert spaces to backslashes in ImageType DICOM tag. 
 
-This script was created because we were unable to import MRI files
+This script was created because we were unable to import various files from other centres.
+This code intends to edit the tag only and leave the image intact. 
 
-# MRI_Tag_Fix
+This code was not intended to be a completely automated procedure. Appropriate QA checks
+should be performed after the code is run to ensure the images are unchanged.
 
-converts spaces to backslash in MRI ImageType DICOM tag
+I take no responsibility if this code is used in any way other than
+intended or without checks that may result in errors.
 
-### Components
-
-README.md
-.gitignore
-LICENSE
-MRI_Tag_Fix.py
-f formed of multiple parts, outline file structure
 
 ## Installation
 
-Unsure how to install - maybe provide executable here
+Do not install, please use the latest version of the executable.
 
 ### Requirements
 
-pydicom
-os
-easygui
+pydicom  
+easygui   
 
-### Tests
-
-No tests currently included
 
 ## Usage
 
-Copy MRI DICOM files into temporary directory
-Run the executable and follow the command prompt instructions
-Once code has finished running, import the edited files into eclipse
-Perform QA checks against PACS once imported into eclipse
+1. Copy MRI DICOM files into temporary directory, run the executable and
+follow the command prompt instructions. 
+2. Import the edited files into eclipse. 
+3. Perform QA checks against PACS once imported into eclipse. 
 
-## Limitations / Known Bugs
-
-DICOM files must begin with MR
-only the image type tag is edited, this will not solve other issues
 
 ## Contribute
 
-Pull requests are welcome.  
-For major changes, please open a ticket first to discuss desired changes:  
-[[repo-name]/issues](http://github.com/UCLHp/[repo-name]/issues)
+Pull requests are welcome. For major changes, please open a ticket first to discuss desired changes: [edit-dicom-image-type/issues](http://github.com/UCLHp/edit-dicom-image-type/issues)
 
-If making changes, please check all tests and add if required.
 
 ## Licence
 
-All code within this package distributed under [GNU GPL-3.0 (or higher)](https://opensource.org/licenses/GPL-3.0).
-
-Full license text contained within the file LICENCE.
+All code within this package distributed under [GNU GPL-3.0 (or higher)](https://opensource.org/licenses/GPL-3.0). Full license text contained within the file LICENSE.
 
 ###  (C) License for all programmes
 
